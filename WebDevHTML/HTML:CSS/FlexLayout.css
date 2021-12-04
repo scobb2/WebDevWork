@@ -1,0 +1,68 @@
+.tab {
+   border: 1px black solid;
+   background: #ddf;
+   font-size: 9pt;
+}
+
+.horizontal-flex {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   border: 1px blue solid;
+}
+
+.vertical-flex {
+   display: flex;
+   flex-flow: column;
+   height: 100px;
+   border: 1px blue solid;
+}
+
+.wrap {
+   flex-wrap: wrap;
+}
+
+.space-between {
+   justify-content: space-between;
+}
+
+.narrow {
+   flex-basis: 100px;
+}
+
+.wide {
+   flex-basis: 200px;
+}
+
+.flat {
+   flex-basis: 20px;
+
+}
+
+.noshrink {
+   flex-shrink: 0;
+}
+
+.grow {
+   flex-grow: 1;
+}
+
+.pig {
+   flex-grow: 2;
+}
+
+.wide-noshrink-pig {
+   flex: 2 0 200px
+}
+
+.top {
+   align-self: flex-start;  
+}
+
+.bottom {
+   align-self: flex-end;  
+}
+
+.stretch {
+   align-self: stretch;  
+}

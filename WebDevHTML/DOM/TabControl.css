@@ -1,0 +1,42 @@
+.tab-block {
+   width: 100%;
+   background-color: #EEF;
+   display: flex;
+   flex-flow: column;
+}
+
+.row {
+   display: flex;
+   flex-flow: row;
+   z-index:1;
+}
+
+.back-row {
+   position: relative;
+   left: 2px;
+   top: 4px;
+   z-index:0;
+}
+
+.tab {
+   border: solid 1px;
+   width: 120px;
+   flex: 0 auto;
+   padding: 4px 8px;
+   background-color: #DDF;
+}
+ 
+.selected-tab {
+   background-color:#BBF;
+}
+ 
+.page {
+   display:none;
+   height:300px;
+   border: solid 2px;
+   background-color:#EEE;
+}
+
+.selected-page {
+   display:block;
+}

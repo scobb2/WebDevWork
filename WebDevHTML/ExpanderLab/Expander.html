@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="us">
+<head>
+  <title>Expander Example Page</title>
+  <link href="Expander.css" rel="stylesheet"></link>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="JQexpander.js"></script>
+  <style>
+     .narrow {
+        width: 20em;
+     }
+     .big {
+        font-size: 150%;
+     }
+   </style>
+   <script>
+      window.onload = function() {
+         $.makeExpander(document.getElementById('root1'));
+         $.makeExpander(document.getElementById('root2'));
+         $.makeExpander(document.getElementById('root3'));
+         $.makeExpander(document.getElementById('root4'));
+      };
+   </script>
+</head>
+
+<body>
+  <h2>Example Expander Blocks</h2>
+    
+  <h3>Example 1: Four textual subpages, with varying styles</h3>
+  <div id="root1">
+    <div title="Narrow Lorem" class="narrow">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div title="Short Lorem">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+    <div title="Big Lorem" class="big">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div title="Long Lorem">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+     in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+     nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+     sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div title="Longer Lorem">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+     in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+     nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+     sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div title="Longest Lorem">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+     in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+     nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+     sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  
+  <h3>Example 2: No subpages</h3>
+  <div id="root2">
+  </div>
+  
+  <h3>Example 3: One subpage with complex style</h3>
+  <div id="root3">
+    <div title="I got yer Lorem right here" class="narrow big">
+     Lorem ipsum 2 dolor sit amet, consectetur adipisicing elit, sed do
+     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquip ex ea commodo consequat.</div>
+  </div>
+  
+  <h3>Example 4: Two interesting subpages, one empty, one graphical</h3>
+  <div id="root4">
+    <div title="Mei2 you3 lorem"></div>
+    <div title="Hay espacio; no hay lorem"
+     style="width: 200px; height: 200px; background-color:gray"></div>
+  </div>
+
+</body>
+</html>

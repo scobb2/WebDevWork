@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="us">
+<head>
+  <title>Flex Layout Experiments</title>
+  <link href="FlexLayout.css" rel="stylesheet"></link>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Default Horizontal behavior</h2>
+  <div class="horizontal-flex"> 
+    <div class="narrow tab">Narrow</div>
+    <div class="wide tab">Wide</div>
+    <div class="wide tab">Wide</div>
+    <div class="narrow tab">Narrow</div>
+  </div>
+  <h2>Vertical behavior</h2>
+  <div class="vertical-flex"> 
+    <div class="flat tab">Tab 1</div>
+    <div class="flat tab">Tab 2</div>
+    <div class="flat tab">Tab 3</div>
+  </div>
+  <h2>Horizontal behavior w/wrap</h2>
+  <div class="horizontal-flex wrap"> 
+    <div class="narrow tab">Narrow</div>
+    <div class="wide tab">Wide</div>
+    <div class="wide tab">Wide</div>
+    <div class="narrow tab">Narrow</div>
+  </div>  <h2>Horizontal behavior w/spacing</h2>
+  <div class="horizontal-flex space-between"> 
+    <div class="narrow tab">Narrow</div>
+    <div class="wide tab">Wide</div>
+    <div class="wide tab">Wide</div>
+    <div class="narrow tab">Narrow</div>
+  </div>
+  <h2>Vertical behavior w/spacing</h2>
+  <div class="vertical-flex space-between"> 
+    <div class="flat tab">Tab 1</div>
+    <div class="flat tab">Tab 2</div>
+    <div class="flat tab">Tab 3</div>
+  </div>
+  <h2>Shrinking behavior</h2>
+  <div class="horizontal-flex"> 
+    <div class="narrow tab noshrink">Narrow noshrink</div>
+    <div class="wide tab noshrink">Wide noshrink</div>
+    <div class="wide tab">Wide shrink</div>
+    <div class="narrow tab">Narrow shrink</div>
+  </div>
+  <h2>Growing behavior</h2>
+  <div class="horizontal-flex"> 
+    <div class="narrow tab">Narrow no grow</div>
+    <div class="wide tab grow">Wide grow</div>
+    <div class="tab wide-noshrink-pig">Wide double-grow</div>
+    <div class="narrow tab grow">Narrow grow</div>
+  </div>
+  <h2>Alignment choices</h2>
+  <div class="horizontal-flex"> 
+    <div class="narrow tab">Center (default)</div>
+    <div class="narrow tab top">Top</div>
+    <div class="narrow tab bottom">Bottom</div>
+    <div class="narrow tab stretch">Stretch</div>
+  </div>
+</body>
+</html>
